@@ -1,6 +1,6 @@
 
 __author__ = "yehonadav"
-__version__ = "2019.9.4.9.3.57.431394"
+__version__ = "2019.9.4.9.23.27.527175"
 __author_email__ = "yonadav.barilan@gmail.com"
 __description__ = "qaviton helpers"
 __url__ = "https://github.com/qaviton/qaviton_helpers.git"
