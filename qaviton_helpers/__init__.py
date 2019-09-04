@@ -7,6 +7,7 @@ __url__ = "https://github.com/qaviton/qaviton_helpers.git"
 __license__ = "apache-2.0"
 
 
+from qaviton_helpers import conditions
 from qaviton_helpers.converters import string_to_ascii, ascii_to_string
 from qaviton_helpers.diff import list_diff
 from qaviton_helpers.inner_info import funcname, classname
