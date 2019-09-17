@@ -15,4 +15,4 @@ from qaviton_helpers.object_helpers import DynamicClass, lists_to_object, dict_t
 from qaviton_helpers.relative_path import path
 from qaviton_helpers.silly_helpers import get_python_interpreter, get_python_version, get_timestamp, pop_by_name, swap
 from qaviton_helpers.timers import DynamicWait
-from qaviton_helpers.try_functions import try_to, try_or_none
+from qaviton_helpers.try_functions import try_to, try_or_none, multi_try, multi_try_no_break
