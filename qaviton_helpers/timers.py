@@ -7,11 +7,16 @@ class DynamicWait:
     remaining of the delay
     """
 
-    def __init__(self, duration):
+    def __init__(self, duration=None):
         self.t = time()
         self.d = duration
 
-    def __call__(self):
+    def __call__(self, duration=None):
+        if duration is None:
+            if self.d is None:
+                raise ValueError(
+                    "missing duration parameter")
+            duration = self.d
         t = time() - self.t
-        if t < self.d:
-            sleep(self.d - t)
+        if t < duration:
+            sleep(duration - t)

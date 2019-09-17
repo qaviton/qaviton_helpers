@@ -5,17 +5,17 @@ from functools import wraps
 
 
 def try_to(f, *args, **kwargs):
-    try:
-        return f(*args, **kwargs)
-    except Exception as e:
-        return e
+    try: return f(*args, **kwargs)
+    except Exception as e: return e
 
 
 def try_or_none(f, *args, **kwargs):
-    try:
-        return f(*args, **kwargs)
-    except:
-        return
+    try: return f(*args, **kwargs)
+    except: return
+
+
+def multi_try(*f): return try_to(lambda: [F() for F in f])
+def multi_try_no_break(*f): return [try_to(F) for F in f]
 
 
 def retry(retries=3, delay=0, backoff=2, exceptions=Exception):
