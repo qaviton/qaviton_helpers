@@ -3,25 +3,23 @@ package_name = "qaviton_helpers"
 
 if __name__ == "__main__":
     from sys import version_info as v
-    from qaviton_helpers import __author__, __version__, __author_email__, __description__, __url__, __license__
     from setuptools import setup, find_packages
     with open("requirements.txt") as f: requirements = f.read().splitlines()
     with open("README.md", encoding="utf8") as f: long_description = f.read()
     setup(
         name=package_name,
-        version="2019.9.17.13.39.13.84912",
-        author=__author__,
-        author_email=__author_email__,
-        description=__description__,
+        version="2019.9.18.15.45.51.685264",
+        author="qaviton",
+        author_email="info@qaviton.com",
+        description="qaviton help functions to make things simple",
         long_description=long_description,
         long_description_content_type="text/markdown",
-        url=__url__,
+        url="https://github.com/qaviton/qaviton_helpers",
         packages=[pkg for pkg in find_packages() if pkg.startswith(package_name)],
-        license=__license__,
+        license="apache-2.0",
         classifiers=[
             f"Programming Language :: Python :: {v[0]}.{v[1]}",
         ],
         install_requires=requirements
     )
-
 
