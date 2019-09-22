@@ -1,5 +1,5 @@
 from qaviton_helpers import conditions
-from qaviton_helpers.converters import string_to_ascii, ascii_to_string
+from qaviton_helpers.converters import string_to_ascii, ascii_to_string, urlencode
 from qaviton_helpers.diff import list_diff
 from qaviton_helpers.inner_info import funcname, classname
 from qaviton_helpers.object_helpers import DynamicClass, lists_to_object, dict_to_object, object_to_dict, object_to_list
