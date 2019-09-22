@@ -1,3 +1,10 @@
+from urllib.parse import quote
+
+
+def urlencode(string):
+    return quote(string, safe='')
+
+
 def string_to_ascii(string: str):
     """return string of ascii characters with _ as seperator"""
     return '_'.join(str(ord(c)) for c in string)
