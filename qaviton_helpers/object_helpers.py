@@ -34,3 +34,14 @@ def object_to_list(obj: object):
     """parse an object and return a list of values"""
     obj_dict = obj.__dict__
     return [obj_dict[key] for key in obj_dict if not key.startswith('__')]
+
+
+def remove_dict_keys(d: dict, *keys):
+    """usage:
+    from qaviton_helpers import remove_dict_keys
+    d = {'a':1,'b':2,'c':3}
+    remove_dict_keys(d, 'a','b','c')
+    d
+    >{}
+    """
+    for k in keys: del d[k]
