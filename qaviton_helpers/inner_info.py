@@ -16,3 +16,8 @@ def classname(frame=None):
             # return its class
             return getattr(instance, '__class__', None).__name__
     return None
+
+
+def get_module_name(module):
+    """in case you have a module.dir.name and you want the name"""
+    return module.__name__.rsplit('.', 1)[-1]
