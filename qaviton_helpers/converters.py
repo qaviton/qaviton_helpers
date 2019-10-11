@@ -1,4 +1,4 @@
-from urllib.parse import quote
+from urllib.parse import quote, unquote as urldecode
 
 
 def urlencode(string, safe='', encoding=None, errors=None):
