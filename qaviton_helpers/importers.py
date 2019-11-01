@@ -1,7 +1,6 @@
-from sys import path as paths
 from os import sep
-from os.path import basename, isdir, exists, dirname
-from os.path import isdir
+from sys import path as paths
+from os.path import basename, dirname, isdir
 from importlib.util import spec_from_file_location, module_from_spec
 
 
